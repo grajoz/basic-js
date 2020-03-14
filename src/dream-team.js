@@ -1,4 +1,11 @@
-module.exports = function createDreamTeam(/* members */) {
-  throw 'Not implemented';
-  // remove line with error and write your code here
+module.exports = function createDreamTeam(members) {
+let string="";
+let arr=[];
+for (i=0;i<members.length;i++){
+  if ((members[i]!==undefined)&&(typeof(members[i])==="string")&&(members[i].length>0)){
+    arr[i]=members[i].match(/\p{Lu}/u);
+  }
+}
+string=arr.join("");
+return string
 };
