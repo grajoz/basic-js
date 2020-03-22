@@ -1,7 +1,6 @@
 module.exports = function transform(arr) {
     /*throw 'Not implemented';*/
-   if (!arr.isArray()){throw 'Not implemented'}
-
+    if (!Array.isArray(arr)){ throw "Parameter is not a array!" }
 
 for (let i=0;i<arr.length;i++){
 
